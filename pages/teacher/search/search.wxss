@@ -1,0 +1,2 @@
+/* pages/teacher/search/search.wxss */
+@import "../../../componts/wxSearchView/wxSearchView.wxss";

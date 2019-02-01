@@ -1,0 +1,47 @@
+/* pages/my/my.wxss */
+.header{
+    position: relative;
+    height: 260rpx;
+    line-height: 200rpx;
+    padding:30rpx 30rpx 30rpx 150rpx;
+    box-sizing: border-box;
+    background: #AB956D;
+    font-size: 28rpx;
+    color: #fff;
+}
+.header .thumb{
+    position: absolute;
+    left: 30rpx;
+    top: 80rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+}
+.header .about{
+    margin-top: 40rpx;
+    float: right;
+}
+.newest-box{
+  width: 100%;
+    padding:0 10rpx;
+    display: flex;
+    flex-wrap: wrap;
+}
+.newest-box .newest-list{
+    display: inline-block;
+    width: 22%;
+    height: 160rpx;
+    margin:10rpx;
+    border-radius: 10px;
+    text-align: center;
+    background: #f5f6f5;
+}
+
+.newest-box .newest-list image{
+    width: 75rpx;
+    height: 75rpx;
+    margin: 20rpx 0 10rpx;
+}
+.newest-box .newest-list .newest-text{
+    font-size: 20rpx;
+}

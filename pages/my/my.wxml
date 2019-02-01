@@ -1,0 +1,54 @@
+<!--pages/my/my.wxml-->
+<view class="main">
+  <view class="header">
+    <image src="{{thumb}}" class="thumb"></image>
+    <text class="nickname">{{nickname}}</text>
+    <text class="about">我要教口语</text>
+  </view>
+  <view class="newest">
+    <view class="newest-box">
+      <view class="newest-list">
+        <navigator url="details/details">
+          <image src="/images/tabBarIcon/shouye02.png"></image>
+          <view class="newest-text">
+            <text>资料</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="newest-list">
+        <navigator url="details/details">
+          <image src="/images/tabBarIcon/shouye02.png"></image>
+          <view class="newest-text">
+            <text>老师</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="newest-list">
+        <navigator url="details/details">
+          <image src="/images/tabBarIcon/shouye02.png"></image>
+          <view class="newest-text">
+            <text>课程</text>
+          </view>
+        </navigator>
+      </view>
+      <view class="newest-list">
+        <navigator url="details/details">
+          <image src="/images/tabBarIcon/shouye02.png"></image>
+          <view class="newest-text">
+            <text>问答</text>
+          </view>
+
+        </navigator>
+      </view>
+      <view class="newest-list">
+        <navigator url="details/details">
+          <image src="/images/tabBarIcon/shouye02.png"></image>
+          <view class="newest-text">
+            <text>联系我们</text>
+          </view>
+        </navigator>
+      </view>
+
+    </view>
+  </view>
+</view>

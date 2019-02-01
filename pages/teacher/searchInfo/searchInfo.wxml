@@ -1,0 +1,2 @@
+<!--pages/teacher/searchInfo/searchInfo.wxml-->
+<text>{{value}}</text>

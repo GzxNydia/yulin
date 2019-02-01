@@ -1,0 +1,12 @@
+<!--pages/teacher/teacher.wxml-->
+<view class='container'>
+  <view class='page_row' bindtap="search">  
+      <view class="search">  
+        <view class="df search_arr">  
+          <icon class="searchcion" size='20' type='search'></icon>  
+          <input class="" disabled placeholder="请输入关键字" value="{{searchValue}}"/>  
+        </view>  
+      </view>  
+    </view>  
+
+</view>

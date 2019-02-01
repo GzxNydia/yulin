@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='nav'>
+    <view class="navbar">
+      <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+    </view>
+  </view>
+
+  <!--首页-->
+  <view wx:if="{{currentTab==0}}">
+    <view class="vedio" data-pname="{{p.name}}" data-brand="1" data-price="{{p.price}}" wx:for="{{listJz}}" wx:key="name" wx:for-item="p">
+
+      <view class="con">
+        <view class='con-top'>
+          <view class="nm">{{p.name}}</view>
+          <view class="time">{{p.time}}</view>
+          <view style="clear:both;height:0"></view>
+        </view>
+        <view class="contact_vedio">
+           <video id='myVideo' bindplay='play' Autoplay='{{liuliang}}' src="{{p.videoUrl}}" poster="/images/timg.jpg" objectFit='fill'>
+      <cover-view class='liuliang'>
+        <cover-view style='display:{{liuliangshow}}' class='iconfont'>
+           您正在使用移动网络，继续播放将消耗流量   
+         </cover-view>
+      </cover-view>
+      <cover-view style='display:{{coverdisplay}}'>      
+        <cover-image mode="widthFix" src="/images/timg.jpg"></cover-image>
+      </cover-view> 
+    </video>
+
+        </view>
+        <view class="contact_sub">
+          <view class='avatar'>
+            <view class="userinfo">
+              <block>
+                <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+                <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+              </block>
+            </view>
+          </view>
+          <view class='tool'>
+            <view class="tool-item" catchtap='onShareTop' data-post-id="{{post.postId}}">
+              <image src="/images/tool/share.png"></image>
+              <text>{{p.price}}</text>
+            </view>
+            <view class="tool-item comment" catchtap='onCommentTap' data-post-id="{{post.postId}}">
+              <image src="/images/tool/comment.png"></image>
+              <text>{{p.price}}</text>
+            </view>
+            <view class="tool-item" catchtap='onLikeTap' data-post-id="{{post.postId}}">
+              <image src="/images/tool/like.png"></image>
+              <text>{{p.price}}</text>
+            </view>
+
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--搜索-->
+  <view wx:if="{{currentTab==1}}">
+    音频
+  </view>
+
+  <!--我-->
+  <view wx:if="{{currentTab==2}}">
+    图文
+  </view>
+</view>

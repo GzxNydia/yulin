@@ -1,0 +1,118 @@
+/**index.wxss**/
+
+.page {
+  /* margin-left: 10rpx;
+  margin-right: 10rpx; */
+}
+
+.nav {
+  /* width: 90%; */
+  font-size: 14px;
+  margin: 10rpx 50rpx;
+  border-radius: 10rpx;
+  background: #eef0f4;
+  text-align: center;
+}
+
+.navbar {
+  margin: 20rpx;
+  flex: none;
+  display: flex;
+}
+
+.navbar .item {
+  margin: 10rpx 0;
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.navbar .item.active {
+  border: 1px solid #fff;
+  border-radius: 10rpx;
+  color: #FF7F50;
+  background: #fff;
+}
+video{
+  height: 400rpx;
+  width: 100%;
+}
+.vedio {
+  display: flex;
+  margin: 10px 50rpx;
+  padding: 10rpx;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+.vedio:active {
+  background-color: #f5f5f5;
+}
+
+/* .vedio .img {
+  width: 300rpx;
+  text-align: center;
+} */
+
+
+.vedio .con {
+  flex: 1;
+  
+}
+
+.con .nm {
+  font-size: 16px;
+  font-weight: bold; 
+  float: left;
+}
+.con .time {
+  font-size: 14px;
+  color: #aaa;
+  float: right;
+
+}
+.con .contact_vedio {
+  margin: 20rpx 10rpx;
+  border: 1sp
+}
+ .contact_sub .avatar .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  float: left;
+}
+
+.contact_sub .avatar .userinfo-avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  
+}
+
+/* .contact_sub .avatar .userinfo-nickname {
+  font-size: 14px;
+  color: #aaa;
+} */
+.tool{
+  height: 64rpx;
+  text-align: center;
+  line-height: 64rpx;
+  /* margin: 20rpx 28rpx 20rpx 0; */
+  float: right;
+}
+.tool-item{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30rpx;
+}
+.tool-item image{
+  height: 40rpx;
+  width: 40rpx;
+  vertical-align: -3px;
+  margin-right: 10rpx;
+}
+.comment image{
+  transform: scale(.85);
+}
+
